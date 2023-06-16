@@ -3,18 +3,28 @@
     height: 150px;
     margin: auto;
     background-color: red;
-    animation-duration: ;
-    animation: colorChanger 3s infinite;
-    animation-timing-function: ease-out;
+    animation-name: colorChanger;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   /* animation: colorChanger 3s infinite;*/
+    animation-timing-function: linear;
+    border-radius: 100%;
+    text-align: center;
 }
 @keyframes colorChanger {
-    0%{
+    0%,100%{
         background-color: red;
+        /*transform: translate(0,0px);*/
+        transform: scale(2);
     }
     50%{
         background-color: navajowhite;
+        /*transform: translate(0,50px);*/
+        transform: scale(1);
     }
-    100%{
+    70%{
         background-color: goldenrod;
+       /* transform: translate(0,300px);*/
+       transform: scale(1);
     }
 }
