@@ -28,3 +28,15 @@
        transform: scale(1);
     }
 }
+.left{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 200px;
+    animation:box 3s infinite;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    float: left;
+}
